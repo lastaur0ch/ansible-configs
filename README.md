@@ -1,3 +1,3 @@
 # ansible-configs
 
-Ansible configuration playbooks for several senarias
+Ansible configuration playbooks for several scenarios
