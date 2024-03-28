@@ -1,4 +1,11 @@
 ---
+- hosts: prometheus
+  become: yes
+  become_user: root
+  become_method: sudo
+  roles:
+    - prometheus
+
 - hosts: alertmanager
   become: yes
   become_user: root
@@ -12,13 +19,6 @@
   become_method: sudo
   roles:
     - node-exporter
-
-- hosts: prometheus
-  become: yes
-  become_user: root
-  become_method: sudo
-  roles:
-    - prometheus
 
 - hosts: grafana
   become: yes
