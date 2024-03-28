@@ -1,0 +1,10 @@
+---
+- hosts: monitoring_server
+  become: yes
+  become_user: root
+  become_method: sudo
+  roles:
+    - prometheus
+    - grafana
+    - node-exporter
+    - alertmanager
