@@ -6,12 +6,12 @@
   roles:
     - alertmanager
 
-- hosts: node_exporter
+- hosts: node-exporter
   become: yes
   become_user: root
   become_method: sudo
   roles:
-    - prometheus_node_exporter
+    - node-exporter
 
 - hosts: prometheus
   become: yes
