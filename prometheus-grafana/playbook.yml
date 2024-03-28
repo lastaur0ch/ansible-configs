@@ -13,12 +13,12 @@
   roles:
     - alertmanager
 
-- hosts: node-exporter
+- hosts: node_exporter
   become: yes
   become_user: root
   become_method: sudo
   roles:
-    - node-exporter
+    - node_exporter
 
 - hosts: grafana
   become: yes
